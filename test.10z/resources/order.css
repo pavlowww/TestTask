@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+body input {
+  border-radius: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+#order-btn {
+  display: inline;
+  margin: 20px;
+  min-height: 35px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #77608d;
+  padding: 0px 20px;
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(to bottom, #00acee, #0072e0);
+}
+
+.container {
+  background-color: black;
+  color: blanchedalmond;
+  height: calc(100% - 50px);
+  padding: 25px;
+  text-align: center;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 15px #7a956b;
+}
+
+.form-input.error {
+  box-shadow: 0 0 15px red;
+}
+
+.hiden-block {
+  display: display;
+}
+
+#name {
+  text-align: center;
+}
+
+.order-image {
+  border: double darkgoldenrod;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.order-form label {
+  display: block;
+}

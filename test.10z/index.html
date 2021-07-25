@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/order.css" />
+    <script src="resources/validator.js" defer></script>
+    <script src="resources/index.js" defer></script>
+
+    <title>Ваш заказ</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="order">
+        <img class="order-image" src="resources/order.jpg" alt="Ваш заказ" />
+        <div class="order-description">
+          <h1>СТЕЙК</h1>
+          <h2>Классический сочный стейк</h2>
+          <h3 class="price"></h3>
+        </div>
+      </div>
+
+      <form action="#" class="order-form" id="orderForm">
+        <div>
+          <label for="name">Ваше Имя</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            minlength="2"
+            maxlength="32"
+            autocomplete="off"
+            placeholder="Введите ваше имя"
+          />
+        </div>
+        <div>
+          <label for="phone">Ваш моб. телефон</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            autocomplete="off"
+            placeholder="+380"
+            list="input-list"
+            minlength="13"
+            maxlength="13"
+          />
+          <datalist id="input-list">
+            <option value="+38050"></option>
+            <option value="+38066"></option>
+            <option value="+38099"></option>
+            <option value="+38097"></option>
+            <option value="+38067"></option>
+            <option value="+38095"></option>
+            <option value="+38093"></option>
+            <option value="+38073"></option>
+          </datalist>
+        </div>
+
+        <button id="order-btn" class="hiden-block">Заказать</button>
+        <br />
+        <progress id="user-progress" value="70" max="100"></progress>
+        <br />
+        <div class="timerInfo">Время на оформление заказа ограничено!</div>
+        <script src="resources/timer.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
